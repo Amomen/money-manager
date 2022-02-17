@@ -25,19 +25,13 @@ function calculation(positive) {
     const balanceInt = parseFloat(balance.innerText);
     balance.innerText = afterCosting;
 
-
+    if (isNaN(incomeInt)) throw "not a number";
 
 }
-
-
-
-
-
 
 document.getElementById('calculate').addEventListener('click', function () {
 
     calculation()
-
 
 })
 
@@ -53,23 +47,15 @@ document.getElementById('sBtn').addEventListener('click', function () {
     const sFloat = parseFloat(saving.value);
 
     //saving calculation
-    const parcent =parseFloat(incomeInt * sFloat) / 100;
+    const parcent = parseFloat(incomeInt * sFloat) / 100;
 
-    // console.log(parcent)
 
     //saving Show
-     document.getElementById('sAmount').innerText= parcent;
-    
+    document.getElementById('sAmount').innerText = parcent;
 
     //remaining balance
     const balance = document.getElementById('balance');
     const balanceInt = parseFloat(balance.innerText);
-    document.getElementById('rBalance').innerText= balanceInt - parcent;
-
-
-
-    
-
-
+    document.getElementById('rBalance').innerText = balanceInt - parcent;
 
 })
