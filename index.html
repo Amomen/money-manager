@@ -38,44 +38,66 @@
                     <!-- calculator -->
                     <div class="col-md-4 col-12 p-12  bg-gray-400 mx-auto  ">
                         <div class="container">
-                            <div class="incomeTxt">
-                                <h4 class="text-center income">income</h4>
+                            <div class="row">
+                                <div class="incomeTxt">
+                                    <h4 class="text-center income">income</h4>
+                                </div>
+    
+                                <div class="earn ">
+                                    <label for="income">Income:</label>
+                                    <input type="text" id="income" class=" form-control rounded">
+                                </div>
+                                <div class="ExpensesTxt">
+                                    <h4 class="text-center income mt-5 mb-5 text-bold-300">Expenses</h4>
+                                </div>
+    
+                                <div class="food ">
+                                    <label for="food">Food:</label>
+                                    <input type="text" id="food" class="rounded form-control  ">
+                                </div>
+                                <div class="rent mt-5">
+                                    <label for="rent">Rent:</label>
+                                    <input type="text" id="rent" class="rounded form-control  ">
+                                </div>
+                                <div class="cloths mt-5 d-block">
+                                    <label for="cloths">Cloths:</label>
+                                    <input type="text" id="cloths" class="rounded  form-control  ">
+                                </div>
+                                <div class="button text-center mt-4">
+                                    <button id="calculate" class="btn btn-primary text-center">Calculate</button>
+                                </div>
+                                <div class="total-expenses ">
+                                    <p>Total Expenses : <span class="text-violet-700" id="costing">000</span></p>
+                                </div>
+                                <div class="total-balance">
+                                    <p>Total Balance : <span  class="text-violet-700" id="balance">000</span></p>
+                                </div>
                             </div>
 
-                            <div class="earn ">
-                                <label for="income">Income:</label>
-                                <input type="text" id="income" class=" form-control rounded">
-                            </div>
-                            <div class="ExpensesTxt">
-                                <h4 class="text-center income mt-5 mb-5 text-bold-300">Expenses</h4>
-                            </div>
+                            <div class="row saving ">
+                                <div class="col-md-6 flex items-center">
+                                    <label for="save">Save:</label>
+                                    <input type="text" id="save" class="border w-50 form-control rounded">
+                                </div>
+                                <div class="col-md-2">%</div>
+                                <div class="col-md-4">
+                                    <button id="sBtn" class="btn btn-primary">Save</button>
+                                </div>
+                                <div class="total-expenses mt-5 ">
+                                    <p class="text-purple-700">Saving Amount : <span class="text-sky-700" id="sAmount">000</span></p>
+                                </div>
 
-                            <div class="food ">
-                                <label for="food">Food:</label>
-                                <input type="text" id="food" class="rounded form-control  ">
-                            </div>
-                            <div class="rent mt-5">
-                                <label for="rent">Rent:</label>
-                                <input type="text" id="rent" class="rounded form-control  ">
-                            </div>
-                            <div class="cloths mt-5 d-block">
-                                <label for="cloths">Cloths:</label>
-                                <input type="text" id="cloths" class="rounded  form-control  ">
-                            </div>
-                            <div class="button text-center mt-4">
-                                <button id="calculate" class="btn btn-primary text-center">Calculate</button>
-                            </div>
-                            <div class="total-expenses">
-                                <p>Total Expenses : <span id="costing">000</span></p>
-                            </div>
-                            <div class="total-balance">
-                                <p>Total Balance : <span id="balance">000</span></p>
+                                <div class="total-expenses my-5">
+                                    <p class="text-sky-700">Remaining Balance: <span class="text-red-700" id="rBalance">000</span></p>
+                                </div>
                             </div>
 
 
                         </div>
+                       
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>
